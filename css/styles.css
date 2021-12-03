@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --background-color: #e5e5e5;
+  --background-body-color: #f5f4fa;
 }
 body {
   background-color: var(--background-color);
@@ -125,6 +126,13 @@ ul {
   text-transform: uppercase;
 }
 .hero-button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border: 10px transparent;
+  border-radius: 4px;
+  padding: 0;
+  margin: 30px auto 106px;
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -134,6 +142,22 @@ ul {
   line-height: 1.88;
 }
 /* Section */
+.section {
+  padding: 94px 0 94px;
+  outline: 2px solid teal;
+  background-color: var(--background-body-color);
+}
+.section-title-temp {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: -94px;
+  margin-bottom: 51.885px;
+  /*временно, пока не узнаю ка правильно скрывать */
+}
 .section-title {
   color: var(--title-text-color);
   font-weight: bold;
@@ -141,6 +165,10 @@ ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.feature-list {
+  display: flex;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -150,19 +178,46 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.business-list {
+  display: flex;
+}
+/* .business-list .item {
+  display: block;
+} */
+.business-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.command-list {
+  display: flex;
+}
+.command-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.command-list .item {
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
+}
+
 .command-list .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
   letter-spacing: 0.03em;
+  margin: 30px auto 10px;
+  display: block;
+  text-align: center;
 }
 .command-list .text {
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
+  /* margin-bottom: 30px; */
 }
 .filter-button {
   cursor: pointer;
@@ -196,7 +251,10 @@ ul {
 /* footer */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .address-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
@@ -212,6 +270,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+.address .item {
+  margin-top: 9px;
 }
 .footer .logo {
   color: var(--primary-white-color);
