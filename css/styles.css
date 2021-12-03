@@ -1,0 +1,173 @@
+:root {
+  --title-text-color: #212121;
+  --primari-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --background-color: #e5e5e5;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primari-text-color);
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.list {
+  list-style: none;
+}
+.list a {
+  text-decoration: none;
+}
+/* цвет основного текста #212121
+цвет вторичного текста #757575
+цвет текста белый #FFFFFF
+цвет текста акцент #2196F3
+
+цвет хедера #FFFFFF
+
+цвет фона #E5E5E5
+вторичный цвет фона #F5F4FA
+
+цвет фона героя #2F303A
+
+цвет фона футера #2F303A
+*/
+.logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo > span {
+  color: var(--accent-color);
+}
+/* site nav */
+.site-nav,
+.contacts-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.contacts-header .link {
+  color: var(--primari-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-header .link:hover,
+.contacts-header .link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+}
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.command-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+.command-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+.filter-button {
+  cursor: pointer;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.filter-list .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.filter-list .text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-text {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer .logo {
+  color: var(--primary-white-color);
+}
