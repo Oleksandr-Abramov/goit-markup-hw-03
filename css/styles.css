@@ -52,7 +52,16 @@ ul {
   padding-right: 15px;
   /* outline: 2px solid tomato; */
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .logo {
   color: var(--title-text-color);
   text-decoration: none;
@@ -164,7 +173,7 @@ ul {
   letter-spacing: 0.03em;
   margin-top: -94px;
   margin-bottom: 51.885px;
-  /*временно, пока не узнаю ка правильно скрывать */
+  /*временно, тут заголовок впритык к верхнему краю секции, у которой есть верхний падинг 94px  */
 }
 .section-title {
   color: var(--title-text-color);
