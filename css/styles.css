@@ -73,7 +73,7 @@ ul {
 .logo > span {
   color: var(--accent-color);
 }
-/* site nav */
+/* ------------------site nav------------------ */
 .header {
   display: flex;
   padding-top: 24px;
@@ -124,7 +124,11 @@ ul {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-/* Герой */
+/* -------------------Герой------------------- */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero.section {
   background: #2f303a;
 }
@@ -139,6 +143,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .hero-button {
   display: block;
@@ -147,7 +152,7 @@ ul {
   border: 10px transparent;
   border-radius: 4px;
   padding: 0;
-  margin: 30px auto 106px;
+  margin: auto;
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -156,7 +161,7 @@ ul {
   font-size: 16px;
   line-height: 1.88;
 }
-/* Section */
+/* ------------------Section----------------- */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -193,6 +198,9 @@ ul {
 }
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
+}
+.feature-list .text {
+  letter-spacing: 0.03em;
 }
 .business-list {
   display: flex;
