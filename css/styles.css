@@ -7,7 +7,6 @@
   --background-body-color: #f5f4fa;
 }
 body {
-  background-color: var(--background-color);
   color: var(--primari-text-color);
   font-family: roboto, sans-serif;
   font-size: 14px;
@@ -126,7 +125,7 @@ ul {
   color: var(--accent-color);
 }
 /* Герой */
-.hero {
+.hero.section {
   background: #2f303a;
 }
 .hero .container {
@@ -164,16 +163,8 @@ ul {
   /* outline: 2px solid teal; */
   background-color: #ffffff;
 }
-.section-title-temp {
-  color: var(--title-text-color);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: -94px;
-  margin-bottom: 51.885px;
-  /*временно, тут заголовок впритык к верхнему краю секции, у которой есть верхний падинг 94px  */
+.section.business {
+  padding-top: 0px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -194,6 +185,11 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feature-list .item {
+  display: block;
+  width: 270px;
 }
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
